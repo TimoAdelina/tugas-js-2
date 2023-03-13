@@ -1,0 +1,26 @@
+<script>
+let pegawai='timo adelina';
+let jabatan='manager';
+let status='belum menikah';
+let gajiPokok=0;
+ if(jabatan=="manager"){
+    gajiPokok=10000000;
+ }else if(jabatan=="asisten manager"){
+    gajiPokok=8000000;
+ }else{
+    gajiPokok=5000000;
+ }
+ let tunjangan_Jabatan=0.1*gajiPokok;
+ let bpjs=0.1 *gajiPokok;
+
+
+ let tunjangan_Keluarga=0;
+if(status=="sudah menikah"){
+    tunjangan_Keluarga=0.1*gajiPokok;
+}else{
+    tunjangan_Keluarga=0;
+}
+document.write("maka"+" "+pegawai+" "+"mendapatkan pendapatan:"+"<br> Gaji Pokok="+gajiPokok+"<br> Tunjangan Jabatan="+tunjangan_Jabatan+"<br> BPJS="+bpjs+"<br> Tunjangan Keluarga="+tunjangan_Keluarga);
+let total=gajiPokok+tunjangan_Jabatan+bpjs+tunjangan_Keluarga;
+document.write("<br>Total Gaji"+"&nbsp"+pegawai+"="+total);
+</script>
